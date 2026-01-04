@@ -1,0 +1,28 @@
+# General
+.DS_Store
+.idea
+.vscode
+*.log
+
+# Backend (Go)
+backend/bin/
+backend/vendor/
+backend/.env
+backend/tmp/
+
+# Frontend (Next.js)
+frontend/node_modules/
+frontend/.next/
+frontend/.env*
+frontend/.vercel
+frontend/*.log
+
+# Mobile (Flutter)
+mobile/.dart_tool/
+mobile/.idea/
+mobile/.pub-cache/
+mobile/build/
+mobile/.env
+mobile/android/.gradle
+mobile/ios/.symlinks
+mobile/ios/Pods
