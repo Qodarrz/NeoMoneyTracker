@@ -17,7 +17,7 @@ frontend/.env
 frontend/.vercel
 frontend/*.log
 
-# Mobile (Flutter)
+# Mobile (Flutter)  
 mobile/.dart_tool/
 mobile/.idea/
 mobile/.pub-cache/

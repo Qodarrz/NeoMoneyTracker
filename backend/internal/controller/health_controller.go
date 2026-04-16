@@ -3,8 +3,8 @@ package controller
 import (
 	"net/http"
 
-	"github.com/Qodarrz/go-gin-air/internal/helper"
 	"github.com/Qodarrz/go-gin-air/internal/service"
+	"github.com/gin-gonic/gin"
 )
 
 type HealthController struct {
@@ -17,10 +17,10 @@ func NewHealthController(service *service.HealthService) *HealthController {
 	}
 }
 
-func (c *HealthController) Check(w http.ResponseWriter, r *http.Request) {
+func (c *HealthController) Check(ctx *gin.Context) {
 	status := c.service.Check()
 
-	helper.JSON(w, http.StatusOK, map[string]string{
+	ctx.JSON(http.StatusOK, gin.H{
 		"status": status,
 	})
 }

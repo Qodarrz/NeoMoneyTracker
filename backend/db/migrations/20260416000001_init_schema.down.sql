@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS pembayaran_hutangs;
+DROP TABLE IF EXISTS detail_hutangs;
+DROP TABLE IF EXISTS hutangs;
+DROP TABLE IF EXISTS detail_transaksis;
+DROP TABLE IF EXISTS transaksis;
+DROP TABLE IF EXISTS produks;
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS pelanggans;
+DROP TABLE IF EXISTS tokos;
+
+DROP TYPE IF EXISTS debt_status;
+DROP TYPE IF EXISTS payment_method;
+DROP TYPE IF EXISTS user_role;
+
+DROP EXTENSION IF EXISTS "pgcrypto";
